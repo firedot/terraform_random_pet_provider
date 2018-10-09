@@ -41,5 +41,5 @@ terraform apply
 After the provisioning is finished, you will have a t2.micro instance with the following tags: 
 
  * **Identity:**  *test-web-srv*
- * **Name:**  *name.<randomly_generated_pet_name_string>*
+ * **Name:**  *web.<randomly_generated_pet_name_string>*
 
