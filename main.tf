@@ -14,7 +14,11 @@ provider "aws" {
   region     = "${var.region}"
 }
 
-resource "random_pet" "server" {}
+resource "random_pet" "server" {
+  length    = "2"
+  prefix    = "srv"
+  separator = "--"
+}
 
 resource "aws_instance" "server" {
   ami           = "${var.ami_id}"
@@ -22,6 +26,6 @@ resource "aws_instance" "server" {
 
   tags {
     "Identity" = "test-web-srv"
-    "Name"     = "name.${random_pet.server.id}"
+    "Name"     = "web-${random_pet.server.id}"
   }
 }
