@@ -1,7 +1,7 @@
 # terraform_random_pet_provider
 Example of the terraform random_pet provider
 
-*Prerequisites:**
+**Prerequisites:**
 
 You will need to have terraform installed in order to be able to test this code. 
 
