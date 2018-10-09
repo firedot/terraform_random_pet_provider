@@ -6,8 +6,7 @@ variable "region" {
   default = "us-east-2"
 }
 
-variable "ami_id" {
-}
+variable "ami_id" {}
 
 provider "aws" {
   access_key = "${var.access_key}"
@@ -15,8 +14,7 @@ provider "aws" {
   region     = "${var.region}"
 }
 
-resource "random_pet" "server" {
-}
+resource "random_pet" "server" {}
 
 resource "aws_instance" "server" {
   ami           = "${var.ami_id}"
